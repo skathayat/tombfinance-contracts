@@ -24,4 +24,8 @@ interface ITaxable {
     function setTombOracle(address _tombOracle) external;
 
     function setTaxOffice(address _taxOffice) external;
+
+    function isAddressExcluded(address _address) external returns (bool);
+
+    function taxRate() external view returns (uint256);
 }
